@@ -1,0 +1,49 @@
+Recursion
+
+1. In your own words, what is recursion?
+Recursion is when a function calls itself until the base case condition is reached, in which it would collapse with return values until the original starting function is returned with a final value. Recursion is typically used for arbitrary depth situations, which is why it’s often a good thing to do for trees.
+
+2. Why is it necessary to have a base case?
+We need to know when to stop recursing, so a base case is used to indicate when it’s time to stop. If there was no base case, the function would run on an infinite loop, since no condition is set to stop.
+
+
+Graphs
+
+1. What is a graph?
+A graph is a type of data structure that represents some sort of cyclic relationships between nodes. 
+
+2. How is a graph different from a tree?
+It’s similar to trees, except that trees do not have that cyclic pattern. A tree represents some sort of hierarchy with parents and nodes, while graphs can loop over its relationships and manage to get back to the initial node. Additionally, trees have to be connected, while graphs do not. You can have a graph representing two separate entities.
+
+3. Give an example of something that would be good to model with a graph.
+LinkedIn connections is a good example of an undirected graph since relationships are mutual: once you connect with someone, they are also connected to you. 
+
+Performance of Different Data Structures (WIP)
+
+Data Structure 		Index 	Search 	Add-R 	Add-L 	Pop-L 	Pop-R
+Python List (Array) 	O(1) 	O(n) 	O(1) 	O(n)	O(n)  	O(1)  	 
+Linked List 	  	O(n)	O(n)	  	  	  	  	 
+Doubly-Linked List 	O(n)	  	  	  	  	  	 
+Queue (as Array) 	X 	X 	  	X 	  	X
+Queue (as LL or DLL) 	X 	X 	  	X 	  	X
+Stack (as Array, LL, or DLL) 	X 	X 	  	X 	X 	 
+Deque (as DLL) 	X 	X 	  	  	  	 
+
+Data Structure 	Get 	Add 	Delete 	Iterate 	Memory
+Dictionary (Hash Map) 	O(1) 	O(1) 	O(1) 	O(n) 	medium
+Set (Hash Map) 	  	O(1) 	O(1)	 		medium	  	 
+Binary Search Tree 	O(log n)O(log n)  	  	low  	 
+Tree
+
+
+Sorting
+1. Describe in words how the Bubble Sort algorithm works.
+Bubble sort is when you switch next-to-each-other indices from the start of a set of data where you move up the larger number to the right side of the list. Ultimately, the big numbers end up bubbling to the top after the two nested for loops are complete. 
+
+2. Describe in words how the Merge Sort algorithm works.
+It’s a really fast sorting algorithm — O(n log n) - where you divide your set of data in halves and sort those two individual components (divide and conquer), then merge those two sets of data once the base case of a recursion is reached. 
+
+3. Describe in words how the Quick Sort algorithm works.
+This algorithm is where you pick a “pivot number” and sort all the numbers lower than that number to the left side of the list and numbers bigger to the right side. 
+
+		
